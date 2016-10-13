@@ -1,2 +1,13 @@
 # Video-Summarization
 This repository contains the implementation code for video summarization
+
+
+1 将视频切割成帧，并利用low_depth_of_field_indicators计算每帧的得分
+
+2 用summe_superframeSegmentation切割成superframe，并将切割结果存在superFrames中
+
+3 利用superScore计算每个superframe的得分，再用beibao解决背包问题
+
+4 用evaluate将没挑选上的帧的score记为0，调用summe_evaluateSummary计算F
+
+5 show_summary显示摘要结果
